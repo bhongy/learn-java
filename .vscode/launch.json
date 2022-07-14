@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Structure",
+      "request": "launch",
+      "mainClass": "structure.Structure",
+      "projectName": "learn-java_2864db6d"
+    },
+    {
+      "type": "java",
       "name": "Launch HelloWorld",
       "request": "launch",
       "mainClass": "HelloWorld",
