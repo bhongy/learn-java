@@ -22,7 +22,7 @@
 			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"editorconfig.editor",
+				"editorconfig.editorconfig",
 				"github.copilot",
 				"naco-siren.gradle-language",
 				"redhat.vscode-community-server-connector",
