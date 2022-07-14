@@ -1,9 +1,9 @@
 package date;
 
 public class Date {
-  public int day;
-  public int month;
-  public int year;
+  private int day;
+  private int month;
+  private int year;
 
   public Date(int d, int m, int y) {
     this.day = d;
