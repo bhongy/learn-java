@@ -5,7 +5,7 @@ public class Date {
   public int month;
   public int year;
 
-  public Date(int m, int d, int y) {
+  public Date(int d, int m, int y) {
     this.day = d;
     this.month = m;
     this.year = y;
@@ -15,16 +15,21 @@ public class Date {
     return this.month + "/" + this.day + "/" + this.year;
   }
 
-  public void nextDay() {
-    this.day++;
-    if (this.day > daysInMonth(this.month)) {
-      this.day = 1;
-      this.month++;
-      if (this.month > 12) {
-        this.month = 1;
-        this.year++;
+  public Date nextDay() {
+    int d = this.day + 1;
+    int m = this.month;
+    int y = this.year;
+
+    if (d > daysInMonth(this.month)) {
+      d = 1;
+      m = m + 1;
+      if (m > 12) {
+        m = 1;
+        y = y + 1;
       }
     }
+
+    return new Date(d, m, y);
   }
 
   int daysInMonth(int month) {
