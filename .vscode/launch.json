@@ -20,6 +20,13 @@
       "request": "launch",
       "mainClass": "HelloWorld",
       "projectName": "learn-java_2864db6d"
+    },
+    {
+      "type": "java",
+      "name": "Launch date.Main",
+      "request": "launch",
+      "mainClass": "date.Main",
+      "projectName": "learn-java_2864db6d"
     }
   ]
 }
