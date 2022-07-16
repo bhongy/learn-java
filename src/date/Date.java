@@ -21,7 +21,7 @@ public class Date {
     int m = this.month;
     int y = this.year;
 
-    if (d > daysInMonth(this.month)) {
+    if (d > daysInMonth(this.month, this.year)) {
       d = 1;
       m = m + 1;
       if (m > 12) {
@@ -33,7 +33,7 @@ public class Date {
     return new Date(d, m, y);
   }
 
-  int daysInMonth(int month) {
+  static int daysInMonth(int month, int year) {
     switch (month) {
       case 4:
       case 6:
@@ -41,7 +41,7 @@ public class Date {
       case 11:
         return 30;
       case 2:
-        if (isLeapYear(this.year)) {
+        if (isLeapYear(year)) {
           return 29;
         } else {
           return 28;
@@ -51,7 +51,7 @@ public class Date {
     }
   }
 
-  boolean isLeapYear(int year) {
+  static boolean isLeapYear(int year) {
     return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
   }
 }
