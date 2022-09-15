@@ -17,14 +17,15 @@
 		// Configure properties specific to VS Code.
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
-			"settings": { 
+			"settings": {
 			},
-			
+
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"editorconfig.editorconfig",
 				"github.copilot",
 				"naco-siren.gradle-language",
+        "pivotal.vscode-boot-dev-pack",
 				"redhat.vscode-community-server-connector",
 				"vscjava.vscode-gradle",
 				"vscjava.vscode-java-pack"
