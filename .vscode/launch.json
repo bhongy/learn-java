@@ -27,6 +27,16 @@
       "request": "launch",
       "mainClass": "date.Main",
       "projectName": "learn-java_2864db6d"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-BakeryApplication<bakery>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "bhongy.learn_java.bakery.BakeryApplication",
+      "projectName": "bakery",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
