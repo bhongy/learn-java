@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery - Cart</title>
+  </head>
+  <body>
+    <section>
+      <h1>Add bread to cart</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody th:each="bread : ${allBreads}">
+          <tr>
+            <td th:text="${bread.name}"></td>
+            <td>$<span th:text="${bread.unitPrice}"></span></td>
+            <td>
+              <button>add to cart</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section th:if="${!order.isEmpty()}">
+      <h1>Cart</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
